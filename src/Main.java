@@ -82,14 +82,12 @@ public class Main {
     // 7. roundPositiveValueToNearestInteger
 
     public static int roundPositiveValueToNearestInteger(double val) {
-        val += 0.5;
-        return (int) val;
+        return (int) (val + 0.5);
     }
 
     // 8. roundNegativeValueToNearestInteger
 
     public static int roundNegativeValueToNearestInteger(double val) {
-        val -= 0.5;
-        return (int) val;
+        return (int) (val - 0.5);
     }
 }
